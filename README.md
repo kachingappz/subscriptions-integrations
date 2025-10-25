@@ -1,7 +1,5 @@
 # Kaching Subscriptions Integrations
 
-## Contents
-
 ### Klaviyo Templates
 
 Located in `Klaviyo/templates/`, this collection includes responsive HTML email templates for common subscription lifecycle events:
