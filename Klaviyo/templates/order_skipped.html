@@ -756,153 +756,126 @@
                                                                         width="100%"
                                                                       >
                                                                         <tbody>
-                                                                          {% for
-                                                                          line
-                                                                          in
-                                                                          event.lines
-                                                                          %}
-                                                                          <tr>
-                                                                            <td
-                                                                              colspan="7"
-                                                                              height="20"
-                                                                              style="
-                                                                                height: 20px;
-                                                                              "
-                                                                            ></td>
-                                                                          </tr>
-                                                                          <tr>
-                                                                            <td
-                                                                              style="
-                                                                                width: 20px;
-                                                                              "
-                                                                              width="20"
-                                                                            ></td>
-                                                                            <td
-                                                                              style="
-                                                                                width: 70px;
-                                                                              "
-                                                                              valign="top"
-                                                                              width="70"
-                                                                            >
-                                                                              <img
-                                                                                alt="{{ line.variantImageAltText }}"
-                                                                                height="70"
-                                                                                src="{{ line.variantImageUrl }}"
+                                                                          {% for line in event.lines %}
+                                                                            <tr>
+                                                                              <td
+                                                                                colspan="7"
+                                                                                height="20"
                                                                                 style="
-                                                                                  display: block;
-                                                                                  max-width: 70px;
-                                                                                  max-height: 70px;
-                                                                                  width: auto;
-                                                                                  height: auto;
-                                                                                  margin: auto;
-                                                                                  border-radius: 3px;
+                                                                                  height: 20px;
                                                                                 "
+                                                                              ></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td
+                                                                                style="
+                                                                                  width: 20px;
+                                                                                "
+                                                                                width="20"
+                                                                              ></td>
+                                                                              <td
+                                                                                style="
+                                                                                  width: 70px;
+                                                                                "
+                                                                                valign="top"
                                                                                 width="70"
-                                                                              />
-                                                                            </td>
-                                                                            <td
-                                                                              width="20"
-                                                                            ></td>
-                                                                            <td>
-                                                                              <table
-                                                                                border="0"
-                                                                                cellpadding="0"
-                                                                                cellspacing="0"
                                                                               >
-                                                                                <tbody>
-                                                                                  <tr>
-                                                                                    <td
-                                                                                      style="
-                                                                                        font-size: 16px;
-                                                                                        font-family: Lato,
-                                                                                          Helvetica,
-                                                                                          Arial,
-                                                                                          sans-serif;
-                                                                                        line-height: 1.5;
-                                                                                        letter-spacing: 0.3px;
-                                                                                        color: #000000;
-                                                                                      "
-                                                                                    >
-                                                                                      {%
-                                                                                      if
-                                                                                      line.variantTitle
-                                                                                      %}
-                                                                                      {{
-                                                                                      line.variantTitle
-                                                                                      }}
-                                                                                      {%
-                                                                                      else
-                                                                                      %}
-                                                                                      {{
-                                                                                      line.title
-                                                                                      }}
-                                                                                      {%
-                                                                                      endif
-                                                                                      %}
-                                                                                    </td>
-                                                                                  </tr>
-                                                                                  <tr>
-                                                                                    <td
-                                                                                      style="
-                                                                                        font-size: 16px;
-                                                                                        font-family: Lato,
-                                                                                          Helvetica,
-                                                                                          Arial,
-                                                                                          sans-serif;
-                                                                                        line-height: 1.5;
-                                                                                        letter-spacing: 0.3px;
-                                                                                        color: #000000;
-                                                                                      "
-                                                                                    >
-                                                                                      Quantity:
-                                                                                      {{
-                                                                                      line.quantity
-                                                                                      }}
-                                                                                    </td>
-                                                                                  </tr>
-                                                                                </tbody>
-                                                                              </table>
-                                                                            </td>
-                                                                            <td
-                                                                              width="20"
-                                                                            ></td>
-                                                                            <td
-                                                                              style="
-                                                                                text-align: right;
-                                                                                font-size: 16px;
-                                                                                font-family: Helvetica,
-                                                                                  Arial,
-                                                                                  sans-serif;
-                                                                                line-height: 1.5;
-                                                                                letter-spacing: 0.3px;
-                                                                                color: #000000;
-                                                                                word-break: keep-all;
-                                                                              "
-                                                                              valign="top"
-                                                                            >
-                                                                              {{
-                                                                              line.lineDiscountedPriceFormatted
-                                                                              }}
-                                                                            </td>
-                                                                            <td
-                                                                              style="
-                                                                                width: 20px;
-                                                                              "
-                                                                              width="20"
-                                                                            ></td>
-                                                                          </tr>
-                                                                          {%
-                                                                          endfor
-                                                                          %}
+                                                                                <img
+                                                                                  alt="{{ line.variantImageAltText }}"
+                                                                                  height="70"
+                                                                                  src="{{ line.variantImageUrl }}"
+                                                                                  style="
+                                                                                    display: block;
+                                                                                    max-width: 70px;
+                                                                                    max-height: 70px;
+                                                                                    width: auto;
+                                                                                    height: auto;
+                                                                                    margin: auto;
+                                                                                    border-radius: 3px;
+                                                                                  "
+                                                                                  width="70"
+                                                                                />
+                                                                              </td>
+                                                                              <td
+                                                                                width="20"
+                                                                              ></td>
+                                                                              <td>
+                                                                                <table
+                                                                                  border="0"
+                                                                                  cellpadding="0"
+                                                                                  cellspacing="0"
+                                                                                >
+                                                                                  <tbody>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        style="
+                                                                                          font-size: 16px;
+                                                                                          font-family: Lato,
+                                                                                            Helvetica,
+                                                                                            Arial,
+                                                                                            sans-serif;
+                                                                                          line-height: 1.5;
+                                                                                          letter-spacing: 0.3px;
+                                                                                          color: #000000;
+                                                                                        "
+                                                                                      >
+                                                                                        {% if line.variantTitle %}
+                                                                                          {{ line.variantTitle }}
+                                                                                        {% else %}
+                                                                                          {{ line.title }}
+                                                                                        {% endif %}
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        style="
+                                                                                          font-size: 16px;
+                                                                                          font-family: Lato,
+                                                                                            Helvetica,
+                                                                                            Arial,
+                                                                                            sans-serif;
+                                                                                          line-height: 1.5;
+                                                                                          letter-spacing: 0.3px;
+                                                                                          color: #000000;
+                                                                                        "
+                                                                                      >
+                                                                                        Quantity: {{ line.quantity }}
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                  </tbody>
+                                                                                </table>
+                                                                              </td>
+                                                                              <td
+                                                                                width="20"
+                                                                              ></td>
+                                                                              <td
+                                                                                style="
+                                                                                  text-align: right;
+                                                                                  font-size: 16px;
+                                                                                  font-family: Helvetica,
+                                                                                    Arial,
+                                                                                    sans-serif;
+                                                                                  line-height: 1.5;
+                                                                                  letter-spacing: 0.3px;
+                                                                                  color: #000000;
+                                                                                  word-break: keep-all;
+                                                                                "
+                                                                                valign="top"
+                                                                              >
+                                                                                {{ line.lineDiscountedPriceFormatted }}
+                                                                              </td>
+                                                                              <td
+                                                                                style="width: 20px;"
+                                                                                width="20"
+                                                                              ></td>
+                                                                            </tr>
+                                                                          {% endfor %}
 
                                                                           <tr>
                                                                             <td
                                                                               colspan="7"
                                                                               height="20"
-                                                                              style="
-                                                                                height: 20px;
-                                                                              "
-                                                                            ></td>
+                                                                              style="height: 20px;"></td>
                                                                           </tr>
                                                                         </tbody>
                                                                       </table>
@@ -983,161 +956,93 @@
                                                                 cellspacing="0"
                                                                 width="100%"
                                                               >
-                                                                {% if
-                                                                event.deliveryMethod
-                                                                %} {% if
-                                                                event.deliveryMethod.typename
-                                                                ==
-                                                                'SubscriptionDeliveryMethodShipping'
-                                                                %}
-                                                                <tbody
-                                                                  style="
-                                                                    color: #222;
-                                                                  "
-                                                                >
-                                                                  <tr>
-                                                                    <td
+                                                                {% if event.deliveryMethod %}
+                                                                  {% if event.deliveryMethod.typename == 'SubscriptionDeliveryMethodShipping' %}
+                                                                    <tbody
                                                                       style="
-                                                                        font-size: 16px;
+                                                                        color: #222;
                                                                       "
                                                                     >
-                                                                      <b
-                                                                        >Shipping
-                                                                        Address</b
-                                                                      >
-                                                                    </td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td
-                                                                      height="5"
+                                                                      <tr>
+                                                                        <td
+                                                                          style="
+                                                                            font-size: 16px;
+                                                                          "
+                                                                        >
+                                                                          <b
+                                                                            >Shipping
+                                                                            Address</b
+                                                                          >
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          height="5"
+                                                                          style="
+                                                                            height: 5px;
+                                                                          "
+                                                                        ></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                          {{ event.deliveryMethod.shippingOption.title }}<br />
+                                                                          {{ event.deliveryMethod.address.firstName }} {{ event.deliveryMethod.address.lastName }}<br />
+                                                                          {{ event.deliveryMethod.address.address1 }}<br />
+                                                                          {% if event.deliveryMethod.address.address2 %}{{ event.deliveryMethod.address.address2 }}{% endif %}
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  {% elif event.deliveryMethod.typename == 'SubscriptionDeliveryMethodPickup' %}
+                                                                    <tbody style="color: #222;">
+                                                                      <tr>
+                                                                        <tdstyle="font-size: 16px;">
+                                                                          <b>Pickup Address</b>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          height="5"
+                                                                          style="
+                                                                            height: 5px;
+                                                                          "
+                                                                        ></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                          {{ event.deliveryMethod.pickupOption.title }}<br />
+                                                                          {{ event.deliveryMethod.pickupOption.location.address.address1 }}<br />
+                                                                          {% if event.deliveryMethod.pickupOption.location.address.address2 %} {{ event.deliveryMethod.pickupOption.location.address.address2 }} {% endif %}
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  {% elif event.deliveryMethod.typename == 'SubscriptionDeliveryMethodLocalDelivery' %}
+                                                                    <tbody
                                                                       style="
-                                                                        height: 5px;
-                                                                      "
-                                                                    ></td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td>
-                                                                      {{
-                                                                      event.deliveryMethod.shippingOption.title
-                                                                      }}<br />
-                                                                      {{
-                                                                      event.deliveryMethod.address.firstName
-                                                                      }} {{
-                                                                      event.deliveryMethod.address.lastName
-                                                                      }}<br />
-                                                                      {{
-                                                                      event.deliveryMethod.address.address1
-                                                                      }}<br />
-                                                                      {% if
-                                                                      event.deliveryMethod.address.address2
-                                                                      %}{{
-                                                                      event.deliveryMethod.address.address2
-                                                                      }}{% endif
-                                                                      %}
-                                                                    </td>
-                                                                  </tr>
-                                                                </tbody>
-                                                                {% elif
-                                                                event.deliveryMethod.typename
-                                                                ==
-                                                                'SubscriptionDeliveryMethodPickup'
-                                                                %}
-                                                                <tbody
-                                                                  style="
-                                                                    color: #222;
-                                                                  "
-                                                                >
-                                                                  <tr>
-                                                                    <td
-                                                                      style="
-                                                                        font-size: 16px;
-                                                                      "
-                                                                    >
-                                                                      <b
-                                                                        >Pickup
-                                                                        Address</b
-                                                                      >
-                                                                    </td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td
-                                                                      height="5"
-                                                                      style="
-                                                                        height: 5px;
-                                                                      "
-                                                                    ></td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td>
-                                                                      {{
-                                                                      event.deliveryMethod.pickupOption.title
-                                                                      }}<br />
-                                                                      {{
-                                                                      event.deliveryMethod.pickupOption.location.address.address1
-                                                                      }}<br />
-                                                                      {% if
-                                                                      event.deliveryMethod.pickupOption.location.address.address2
-                                                                      %} {{
-                                                                      event.deliveryMethod.pickupOption.location.address.address2
-                                                                      }} {%
-                                                                      endif %}
-                                                                    </td>
-                                                                  </tr>
-                                                                </tbody>
-                                                                {% elif
-                                                                event.deliveryMethod.typename
-                                                                ==
-                                                                'SubscriptionDeliveryMethodLocalDelivery'
-                                                                %}
-                                                                <tbody
-                                                                  style="
-                                                                    color: #222;
-                                                                  "
-                                                                >
-                                                                  <tr>
-                                                                    <td
-                                                                      style="
-                                                                        font-size: 16px;
+                                                                        color: #222;
                                                                       "
                                                                     >
-                                                                      <b
-                                                                        >Local
-                                                                        delivery</b
-                                                                      >
-                                                                    </td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td
-                                                                      height="5"
-                                                                      style="
-                                                                        height: 5px;
-                                                                      "
-                                                                    ></td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td>
-                                                                      {{
-                                                                      event.deliveryMethod.localDeliveryOption.title
-                                                                      }}<br />
-                                                                      {{
-                                                                      event.deliveryMethod.address.firstName
-                                                                      }} {{
-                                                                      event.deliveryMethod.address.lastName
-                                                                      }}<br />
-                                                                      {{
-                                                                      event.deliveryMethod.address.address1
-                                                                      }}<br />
-                                                                      {% if
-                                                                      event.deliveryMethod.address.address2
-                                                                      %}{{
-                                                                      event.deliveryMethod.address.address2
-                                                                      }}{% endif
-                                                                      %}
-                                                                    </td>
-                                                                  </tr>
-                                                                </tbody>
-                                                                {% endif %} {%
-                                                                endif %}
+                                                                      <tr>
+                                                                        <td style="font-size: 16px;">
+                                                                          <b>Local delivery</b>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          height="5"
+                                                                          style="height: 5px;"
+                                                                        ></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                          {{ event.deliveryMethod.localDeliveryOption.title }}<br />
+                                                                          {{ event.deliveryMethod.address.firstName }} {{ event.deliveryMethod.address.lastName }}<br />
+                                                                          {{ event.deliveryMethod.address.address1 }}<br />
+                                                                          {% if event.deliveryMethod.address.address2 %}{{ event.deliveryMethod.address.address2 }}{% endif %}
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  {% endif %} 
+                                                                {% endif %}
                                                               </table>
                                                             </div>
                                                           </td>
@@ -1212,43 +1117,41 @@
                                                                 cellspacing="0"
                                                                 width="100%"
                                                               >
-                                                                {% if
-                                                                event.humanReadableNextOrderDate
-                                                                %}
-                                                                <tbody
-                                                                  style="
-                                                                    color: #222;
-                                                                  "
-                                                                >
-                                                                  <tr>
-                                                                    <td
-                                                                      style="
-                                                                        font-size: 16px;
-                                                                      "
-                                                                    >
-                                                                      <b
-                                                                        >Next
-                                                                        Order
-                                                                        Date</b
+                                                                {% if event.humanReadableNextOrderDate %}
+                                                                  <tbody
+                                                                    style="
+                                                                      color: #222;
+                                                                    "
+                                                                  >
+                                                                    <tr>
+                                                                      <td
+                                                                        style="
+                                                                          font-size: 16px;
+                                                                        "
                                                                       >
-                                                                    </td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td
-                                                                      height="5"
-                                                                      style="
-                                                                        height: 5px;
-                                                                      "
-                                                                    ></td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <td>
-                                                                      {{
-                                                                      event.humanReadableNextOrderDate
-                                                                      }}
-                                                                    </td>
-                                                                  </tr>
-                                                                </tbody>
+                                                                        <b
+                                                                          >Next
+                                                                          Order
+                                                                          Date</b
+                                                                        >
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td
+                                                                        height="5"
+                                                                        style="
+                                                                          height: 5px;
+                                                                        "
+                                                                      ></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td>
+                                                                        {{
+                                                                        event.humanReadableNextOrderDate
+                                                                        }}
+                                                                      </td>
+                                                                    </tr>
+                                                                  </tbody>
                                                                 {% endif %}
                                                               </table>
                                                             </div>
@@ -1318,25 +1221,21 @@
                                                                   auto;
                                                               "
                                                             >
-                                                              {% if
-                                                              event.merchantSupportEmail
-                                                              %}
-                                                              <p
-                                                                style="
-                                                                  padding-bottom: 0;
-                                                                "
-                                                              >
-                                                                If you have any
-                                                                questions or
-                                                                need assistance,
-                                                                our support team
-                                                                is here to help.
-                                                                Just reply to
-                                                                this email or
-                                                                reach out at {{
-                                                                event.merchantSupportEmail
-                                                                }}
-                                                              </p>
+                                                              {% if event.merchantSupportEmail %}
+                                                                <p
+                                                                  style="
+                                                                    padding-bottom: 0;
+                                                                  "
+                                                                >
+                                                                  If you have any
+                                                                  questions or
+                                                                  need assistance,
+                                                                  our support team
+                                                                  is here to help.
+                                                                  Just reply to
+                                                                  this email or
+                                                                  reach out at {{ event.merchantSupportEmail }}
+                                                                </p>
                                                               {% endif %}
                                                             </div>
                                                           </td>
