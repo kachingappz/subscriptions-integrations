@@ -1,10 +1,6 @@
-# Subscription Integrations
+# Kaching Subscriptions Integrations
 
-A collection of email templates and integration resources for subscription management platforms.
-
-## Overview
-
-This repository contains professionally designed email templates for subscription-based businesses. These templates are optimized for various email clients, including desktop and mobile devices, and support legacy clients like Outlook.
+A collection of email templates and integration resources for Kaching Subscriptions.
 
 ## Contents
 
