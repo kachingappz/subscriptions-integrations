@@ -1,7 +1,5 @@
 # Kaching Subscriptions Integrations
 
-A collection of email templates and integration resources for Kaching Subscriptions.
-
 ## Contents
 
 ### Klaviyo Templates
