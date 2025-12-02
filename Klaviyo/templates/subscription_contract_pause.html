@@ -518,11 +518,7 @@
                                                                 "
                                                               >
                                                                 <p>
-                                                                  Hello {{
-                                                                  event.customer.firstName
-                                                                  }} {{
-                                                                  event.customer.lastName
-                                                                  }},
+                                                                  Hello {{ event.customer.firstName }} {{ event.customer.lastName }},
                                                                 </p>
                                                                 <p>
                                                                   Your
@@ -826,9 +822,7 @@
                                                                                         "
                                                                                       >
                                                                                         Quantity:
-                                                                                        {{
-                                                                                        line.quantity
-                                                                                        }}
+                                                                                        {{ line.quantity }}
                                                                                       </td>
                                                                                     </tr>
                                                                                   </tbody>
@@ -851,9 +845,7 @@
                                                                                 "
                                                                                 valign="top"
                                                                               >
-                                                                                {{
-                                                                                line.lineDiscountedPriceFormatted
-                                                                                }}
+                                                                                {{ line.lineDiscountedPriceFormatted }}
                                                                               </td>
                                                                               <td
                                                                                 style="
@@ -1162,9 +1154,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td>
-                                                                        {{
-                                                                        event.humanReadableNextOrderDate
-                                                                        }}
+                                                                        {{ event.humanReadableNextOrderDate }}
                                                                       </td>
                                                                     </tr>
                                                                   </tbody>
