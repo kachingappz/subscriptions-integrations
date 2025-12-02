@@ -517,29 +517,9 @@
                                                                   margin: 0 auto;
                                                                 "
                                                               >
-                                                                <p>
-                                                                  Hello {{
-                                                                  event.customer.firstName
-                                                                  }} {{
-                                                                  event.customer.lastName
-                                                                  }},
-                                                                </p>
-                                                                <p>
-                                                                  Your
-                                                                  subscription
-                                                                  has been
-                                                                  successfully
-                                                                  processed!
-                                                                </p>
-                                                                <p
-                                                                  style="
-                                                                    padding-bottom: 0;
-                                                                  "
-                                                                >
-                                                                  Here are the
-                                                                  details of
-                                                                  your order:
-                                                                </p>
+                                                                <p>Hello {{ event.customer.firstName }} {{ event.customer.lastName }},</p>
+                                                                <p>Your subscription has been successfully processed!</p>
+                                                                <p style="padding-bottom: 0;">Here are the details of your order:</p>
                                                               </div>
                                                             </div>
                                                           </td>
@@ -746,22 +726,16 @@
                                                                               <td
                                                                                 colspan="7"
                                                                                 height="20"
-                                                                                style="
-                                                                                  height: 20px;
-                                                                                "
+                                                                                style="height: 20px;"
                                                                               ></td>
                                                                             </tr>
                                                                             <tr>
                                                                               <td
-                                                                                style="
-                                                                                  width: 20px;
-                                                                                "
+                                                                                style="width: 20px;"
                                                                                 width="20"
                                                                               ></td>
                                                                               <td
-                                                                                style="
-                                                                                  width: 70px;
-                                                                                "
+                                                                                style="width: 70px;"
                                                                                 valign="top"
                                                                                 width="70"
                                                                               >
@@ -845,14 +819,10 @@
                                                                                 "
                                                                                 valign="top"
                                                                               >
-                                                                                {{
-                                                                                line.lineDiscountedPriceFormatted
-                                                                                }}
+                                                                                {{ line.lineDiscountedPriceFormatted }}
                                                                               </td>
                                                                               <td
-                                                                                style="
-                                                                                  width: 20px;
-                                                                                "
+                                                                                style="width: 20px;"
                                                                                 width="20"
                                                                               ></td>
                                                                             </tr>
@@ -936,8 +906,7 @@
                                                             <div
                                                               style="
                                                                 width: 80%;
-                                                                margin: 20px
-                                                                  auto;
+                                                                margin: 20px auto;
                                                               "
                                                             >
                                                               <table
@@ -948,29 +917,16 @@
                                                               >
                                                                 {% if event.deliveryMethod %}
                                                                   {% if event.deliveryMethod.typename == 'SubscriptionDeliveryMethodShipping' %}
-                                                                    <tbody
-                                                                      style="
-                                                                        color: #222;
-                                                                      "
-                                                                    >
+                                                                    <tbody style="color: #222;">
                                                                       <tr>
-                                                                        <td
-                                                                          style="
-                                                                            font-size: 16px;
-                                                                          "
-                                                                        >
-                                                                          <b
-                                                                            >Shipping
-                                                                            Address</b
-                                                                          >
+                                                                        <td style="font-size: 16px;">
+                                                                          <b>Shipping Address</b>
                                                                         </td>
                                                                       </tr>
                                                                       <tr>
                                                                         <td
                                                                           height="5"
-                                                                          style="
-                                                                            height: 5px;
-                                                                          "
+                                                                          style="height: 5px;"
                                                                         ></td>
                                                                       </tr>
                                                                       <tr>
@@ -983,30 +939,16 @@
                                                                       </tr>
                                                                     </tbody>
                                                                   {% elif event.deliveryMethod.typename == 'SubscriptionDeliveryMethodPickup' %}
-                                                                    <tbody
-                                                                      style="
-                                                                        color: #222;
-                                                                      "
-                                                                    >
+                                                                    <tbody style="color: #222;">
                                                                       <tr>
-                                                                        <td
-                                                                          style="
-                                                                            font-size: 16px;
-                                                                          "
-                                                                        >
-                                                                          <b
-                                                                            >Pickup
-                                                                            Address</b
-                                                                          >
+                                                                        <td style="font-size: 16px;">
+                                                                          <b>Pickup Address</b>
                                                                         </td>
                                                                       </tr>
                                                                       <tr>
                                                                         <td
                                                                           height="5"
-                                                                          style="
-                                                                            height: 5px;
-                                                                          "
-                                                                        ></td>
+                                                                          style="height: 5px;"></td>
                                                                       </tr>
                                                                       <tr>
                                                                         <td>
@@ -1017,29 +959,16 @@
                                                                       </tr>
                                                                     </tbody>
                                                                   {% elif event.deliveryMethod.typename == 'SubscriptionDeliveryMethodLocalDelivery' %}
-                                                                    <tbody
-                                                                      style="
-                                                                        color: #222;
-                                                                      "
-                                                                    >
+                                                                    <tbody style="color: #222;">
                                                                       <tr>
-                                                                        <td
-                                                                          style="
-                                                                            font-size: 16px;
-                                                                          "
-                                                                        >
-                                                                          <b
-                                                                            >Local
-                                                                            delivery</b
-                                                                          >
+                                                                        <td style="font-size: 16px;">
+                                                                          <b>Local delivery</b>
                                                                         </td>
                                                                       </tr>
                                                                       <tr>
                                                                         <td
                                                                           height="5"
-                                                                          style="
-                                                                            height: 5px;
-                                                                          "
+                                                                          style="height: 5px;"
                                                                         ></td>
                                                                       </tr>
                                                                       <tr>
@@ -1139,19 +1068,13 @@
                                                                           font-size: 16px;
                                                                         "
                                                                       >
-                                                                        <b
-                                                                          >Next
-                                                                          Order
-                                                                          Date</b
-                                                                        >
+                                                                        <b>Next Order Date</b>
                                                                       </td>
                                                                     </tr>
                                                                     <tr>
                                                                       <td
                                                                         height="5"
-                                                                        style="
-                                                                          height: 5px;
-                                                                        "
+                                                                        style="height: 5px;"
                                                                       ></td>
                                                                     </tr>
                                                                     <tr>
@@ -1230,20 +1153,7 @@
                                                               "
                                                             >
                                                               {% if event.merchantSupportEmail %}
-                                                                <p
-                                                                  style="
-                                                                    padding-bottom: 0;
-                                                                  "
-                                                                >
-                                                                  If you have any
-                                                                  questions or
-                                                                  need assistance,
-                                                                  our support team
-                                                                  is here to help.
-                                                                  Just reply to
-                                                                  this email or
-                                                                  reach out at {{ event.merchantSupportEmail }}
-                                                                </p>
+                                                                <p style="padding-bottom: 0;">If you have any questions or need assistance, our support team is here to help. Just reply to this email or reach out at {{ event.merchantSupportEmail }}</p>
                                                               {% endif %}
                                                             </div>
                                                           </td>

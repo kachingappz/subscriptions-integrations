@@ -511,40 +511,10 @@
                                                                 color: #1a1a1a;
                                                               "
                                                             >
-                                                              <div
-                                                                style="
-                                                                  width: 80%;
-                                                                  margin: 0 auto;
-                                                                "
-                                                              >
-                                                                <p>
-                                                                  Hello {{
-                                                                  event.customer.firstName
-                                                                  }} {{
-                                                                  event.customer.lastName
-                                                                  }},
-                                                                </p>
-                                                                <p>
-                                                                  Automatic
-                                                                  renewal for
-                                                                  your
-                                                                  subscription
-                                                                  was
-                                                                  unsuccessful.
-                                                                </p>
-                                                                <p
-                                                                  style="
-                                                                    padding-bottom: 0;
-                                                                  "
-                                                                >
-                                                                  Please update
-                                                                  your payment
-                                                                  details by
-                                                                  clicking the
-                                                                  "Manage
-                                                                  Subscription"
-                                                                  button below:
-                                                                </p>
+                                                              <div style="width: 80%; margin: 0 auto;">
+                                                                <p>Hello {{ event.customer.firstName }} {{ event.customer.lastName}},</p>
+                                                                <p>Automatic renewal for your subscription was unsuccessful.</p>
+                                                                <p style="padding-bottom: 0;">Please update your payment details by "Manage Subscription" button below:</p>
                                                               </div>
                                                             </div>
                                                           </td>
@@ -654,8 +624,7 @@
                                                                     "
                                                                     target="_blank"
                                                                   >
-                                                                    Manage
-                                                                    Subscription
+                                                                    Manage Subscription
                                                                   </a>
                                                                 </td>
                                                               </tr>
@@ -1231,20 +1200,7 @@
                                                               "
                                                             >
                                                               {% if event.merchantSupportEmail %}
-                                                                <p
-                                                                  style="
-                                                                    padding-bottom: 0;
-                                                                  "
-                                                                >
-                                                                  If you have any
-                                                                  questions or
-                                                                  need assistance,
-                                                                  our support team
-                                                                  is here to help.
-                                                                  Just reply to
-                                                                  this email or
-                                                                  reach out at {{ event.merchantSupportEmail }}
-                                                                </p>
+                                                                <p style="padding-bottom: 0;">If you have any questions or need assistance, our support team is here to help. Just reply to this email or reach out at {{ event.merchantSupportEmail }}</p>
                                                               {% endif %}
                                                             </div>
                                                           </td>
