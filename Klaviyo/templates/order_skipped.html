@@ -518,43 +518,12 @@
                                                                 "
                                                               >
                                                                 <p>
-                                                                  Hello {{
-                                                                  event.customer.firstName
-                                                                  }} {{
-                                                                  event.customer.lastName
-                                                                  }},
+                                                                  Hello {{ event.customer.firstName }} {{ event.customer.lastName }},
                                                                 </p>
                                                                 <p>
-                                                                  Your upcoming
-                                                                  order for
-                                                                  <b
-                                                                    >{{
-                                                                    event.humanReadableModifiedOrderDate
-                                                                    }}</b
-                                                                  >
-                                                                  was skipped.
-                                                                  You will not
-                                                                  be charged.
-                                                                  Your next
-                                                                  subscription
-                                                                  charge date is
-                                                                  <b
-                                                                    >{{
-                                                                    event.humanReadableNextOrderDate
-                                                                    }}</b
-                                                                  >.
+                                                                  Your upcoming order for <b>{{ event.humanReadableModifiedOrderDate }}</b>was skipped. You will not be charged. Your next subscription charge date is <b>{{ event.humanReadableNextOrderDate}}</b>.
                                                                 </p>
-                                                                <p
-                                                                  style="
-                                                                    padding-bottom: 0;
-                                                                  "
-                                                                >
-                                                                  You can manage
-                                                                  the
-                                                                  subscription
-                                                                  using the
-                                                                  button below:
-                                                                </p>
+                                                                <p style="padding-bottom: 0;">You can manage the subscription using the button below:</p>
                                                               </div>
                                                             </div>
                                                           </td>
